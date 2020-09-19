@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "A Discord bot template.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discordapi"
+  ],
+  "author": "Liam Townsley",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.9.0"
+  }
+}
