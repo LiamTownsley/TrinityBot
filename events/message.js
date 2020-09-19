@@ -1,5 +1,12 @@
 module.exports = async (client, message) => {
 	try {
+		if (message.channel.type == 'news') {
+			// Free Games Bot
+			if(message.author.id == '698117737175580692') {
+				// TODO: Update this to official API, once released.
+				client.api.channels(message.channel.id).messages(message.id).crosspost.post();
+			}
+		}
 		if(message.channel.type !== 'text') return;
 		const prefix = process.env.PREFIX;
 
